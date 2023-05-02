@@ -1,0 +1,754 @@
+* {
+    margin: 0px;
+}
+
+/* Set media for tablet screen */
+@media screen and (min-width: 896px) {
+    .nav-img {
+        left: 380px;
+    }
+
+    #nav-bar a:nth-child(3) {
+        border-left: none;
+        border-right: none;
+    }
+
+    #banner {
+        top: 25%;
+        left: 30%;
+    }
+
+    .middle {
+        width: 0px !important;
+    }
+
+    .experience {
+        width: 33% !important;
+        min-height: 400px !important;
+    }
+
+    .activity {
+        width: 33% !important;
+        min-height: 400px !important;
+
+    }
+
+    .education {
+        width: 33% !important;
+
+        min-height: 400px !important;
+    }
+
+    .hobby {
+        width: 33% !important;
+        min-height: 400px !important;
+    }
+
+    .hobby-items {
+        margin-top: -100px !important;
+    }
+
+    .hobby-items:nth-child(4) {
+        margin-top: 10px !important;
+        margin-left: -200px !important;
+    }
+
+    .language {
+        width: 33% !important;
+        min-height: 400px !important;
+    }
+
+    .skills {
+        width: 33% !important;
+        min-height: 400px !important;
+    }
+
+    .certificate-items:nth-child(2)::before {
+        height: 100% !important;
+    }
+
+    .cer-img>img {
+        height: 200px !important;
+        width: 400px !important;
+    }
+
+    .project-description {
+        font: 0.6em sans-serif !important;
+    }
+
+    .project-table {
+        font: 0.65em sans-serif !important;
+    }
+
+    .project-name:nth-child(1) {
+        height: 80px !important;
+        text-align: center;
+    }
+
+    .certificate-container>.certificate-items:nth-child(1):after {
+        content: '';
+        position: absolute;
+        background-color: #d6c08d;
+        width: 80%;
+        height: 2px;
+        bottom: -5px !important;
+        left: 5px !important;
+    }
+
+    .certificate-container>.certificate-items:nth-child(2):after {
+        content: '';
+        position: absolute;
+        background-color: #d6c08d;
+        width: 80%;
+        height: 2px;
+        bottom: -5px !important;
+        left: 5px !important;
+    }
+
+    #footer>.container {
+        display: flex;
+    }
+
+    #footer>.container>ul>li>a {
+        align-items: center !important;
+    }
+
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section>.container {
+    width: 1170px;
+    margin: auto;
+    display: block;
+    padding: 30px 50px;
+}
+
+.nav-container {
+    position: relative;
+}
+
+#nav-bar {
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#nav-bar>.container {
+    height: 100%;
+    width: 100%;
+}
+
+.img-banner {
+    width: 100%;
+    position: relative;
+}
+
+#banner {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: (-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#nav-bar a {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#nav-bar a:nth-child(3) {
+    border-left: none;
+    border-right: none;
+    width: 200px;
+}
+
+
+/* Style the links inside the navigation bar */
+/* #nav-bar a {
+    float: inherit;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 20px;
+} */
+
+/* Change the color of links on hover */
+#nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+#nav-bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.middle {
+    width: 150px;
+}
+
+.icon-user {
+    color: #1d9dd9;
+}
+
+.icon-doc-text-inv {
+    color: #1d9dd9;
+}
+
+.icon-mail-alt {
+    color: #1d9dd9;
+}
+
+.icon-star-1 {
+    color: #1d9dd9;
+}
+
+/*Create grid and style about section */
+/* #about>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 50px;
+    margin-right: 10%;
+    padding-left: 15%;
+    margin-top: 40px;
+} */
+
+
+#target {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+#personal-info {
+    line-height: 1.5;
+    background-color: #F0F0F0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+/*Create grid and style job-info section */
+/* #job-info>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 50px;
+} */
+
+/*Create grid and style experience section */
+.experience {
+    height: 100%;
+    width: 100%;
+    border: groove;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    justify-items: center;
+    line-height: 1.5;
+}
+
+.ic-toolbox {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.ul-experience {
+    margin-top: 40px;
+    grid-column: 3/1;
+    list-style-type: none;
+    margin-right: 35px;
+    padding-top: 30px;
+}
+
+.experience-time {
+    display: inline;
+    font-style: oblique;
+}
+
+/*Border and Style year experience */
+.experience-time>p {
+    display: inline;
+    background-color: #1d9dd9;
+    border: 5px solid #1d9dd9;
+    box-sizing: inherit;
+    color: white;
+    border-radius: 5px;
+}
+
+/*Create grid and style education section */
+.education {
+    height: 100%;
+    width: 100%;
+    border: groove;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    justify-items: center;
+    line-height: 1.5;
+}
+
+/*Position column education section */
+.education>ul {
+    grid-column: 3/1;
+    list-style-type: none;
+    margin-right: 35px;
+}
+
+.edu-time {
+    font-style: oblique;
+}
+
+.ic-pencil {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+/*Create grid and style activity section */
+.activity {
+    height: 100%;
+    width: 100%;
+    border: groove;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    justify-items: center;
+    line-height: 1.5;
+}
+
+/*Position column activity section */
+.activity>ul {
+    grid-column: 3/1;
+    list-style-type: none;
+    margin-right: 35px;
+}
+
+.activity-time {
+    font-style: oblique;
+}
+
+/*Create grid and style hobby section */
+.hobby {
+    height: 100%;
+    width: 100%;
+    border: groove;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    justify-items: center;
+}
+
+.ic-telescope {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+/*Position column hobby-content */
+.hobby-content {
+    grid-column: 3/1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 25px;
+}
+
+.hobby-items {
+    margin-top: -200px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/*Style and position icon*/
+.ic-megaphone {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: 1px solid #1d9dd9 !important;
+    color: #1d9dd9;
+    margin-bottom: 10px;
+}
+
+/*Style and position icon*/
+.ic-strategy {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: 1px solid #1d9dd9 !important;
+    color: #1d9dd9;
+    margin-bottom: 10px;
+}
+
+/*Style and position icon*/
+.ic-hotairballoon {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: 1px solid #1d9dd9 !important;
+    color: #1d9dd9;
+    margin-bottom: 10px;
+}
+
+/*Style and position icon*/
+.ic-basket {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: 1px solid #1d9dd9 !important;
+    color: #1d9dd9;
+    margin-bottom: 10px;
+}
+
+.language {
+    height: 100%;
+    width: 100%;
+    border: groove;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    justify-items: center;
+}
+
+/*Style and position icon*/
+.ic-tools-2 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+/*Position column language-items */
+.language-items {
+    margin-top: -70px;
+    margin-left: 50px;
+    margin-bottom: -30px;
+    height: 100%;
+    width: 100%;
+    grid-column: 3/1;
+}
+
+/*Style line blue*/
+.point {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+/*Style line grey*/
+.no-point {
+    background: grey;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+
+/*Create grid and style skills section */
+.skills {
+    height: 100%;
+    width: 100%;
+    border: groove;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    justify-items: center;
+}
+
+.ic-mic {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+/*Position column skills-items section */
+.skills-items {
+    margin-left: 50px;
+    /* height: 100%;
+    width: 100%; */
+    grid-column: 3/1;
+    margin-bottom: 20px;
+}
+
+/*Create grid and style certificate container section */
+/* .certificate-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    column-gap: 50px;
+    padding: 15px;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    position: relative;
+} */
+
+/*Create border middle */
+/* .certificate-container::before {
+    content: '';
+    position: absolute;
+    background-color: #d6c08d;
+    width: 80%;
+    height: 2px;
+    top: 2800px;
+    left: 50px;
+
+} */
+
+/*Style certificate item*/
+.certificate-items {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    line-height: 1.7;
+}
+
+/*Create border left item number two */
+.certificate-items:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    background-color: #d6c08d;
+    width: 2px;
+    height: 90%;
+    bottom: 0;
+    left: -7px;
+}
+
+.cer-img>img {
+    height: 100px;
+    width: 250px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+/*Create grid and style project container */
+.project-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    justify-items: center;
+    column-gap: 50px;
+    padding: 15px;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+}
+
+.project-content {
+    border: 1px solid grey;
+}
+
+.project-name {
+    padding: 15px;
+    border: 1px solid grey;
+}
+
+.project-description {
+    width: 100%;
+    padding-top: 10px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+
+}
+
+/*Style and boder project time*/
+.project-time {
+    display: inline;
+    background-color: #1d9dd9;
+    border: 5px solid #1d9dd9 !important;
+    box-sizing: inherit;
+    color: white;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.project-description>div {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project-table {
+    width: 80%;
+    height: 250px;
+    margin: 10px 2;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    /* min-width: 200px; */
+
+}
+
+.table-header {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.project-description>i {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+#footer>.container>ul>li {
+    display: inline-block;
+}
+
+#footer>.container>ul>li>a>i {
+    color: #1d9dd9;
+}
+
+/*Style and position avatar*/
+.nav-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline;
+    position: absolute;
+    left: 45%;
+    top: -50px;
+    border: 20px solid white;
+}
+
+/*Style link footer*/
+
+/* visited link */
+a:visited {
+    color: #1d9dd9;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* hidden input */
+.hidden {
+    display: none;
+}
+
+/* custom input */
+input {
+    width: 80%;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+/* custom button email */
+button {
+    background-color: #199cdb;
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+/* custom button view */
+.container-button {
+    position: absolute;
+    margin: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+/* Custom button ASM3 quest 10 */
+.button-view-skills {
+    display: none;
+}
+
+.button-view-acti {
+    display: none;
+}
+
+.button-view-edu {
+    display: none;
+}
+
+.button-view-exp {
+    display: none;
+}
+
+.button-view-lang {
+    display: none;
+}
+
+.button-view-hobby {
+    display: none;
+}
+
+.experience:hover .button-view-exp {
+    display: inherit;
+}
+
+.language:hover .button-view-lang {
+    display: inherit;
+}
+
+.skills:hover .button-view-skills {
+    display: inherit;
+}
+
+.hobby:hover .button-view-hobby {
+    display: grid;
+
+}
+
+.education:hover .button-view-edu {
+    display: inherit;
+}
+
+.activity:hover .button-view-acti {
+    display: inherit;
+}
+
+#skills--content {
+    padding-top: 20px;
+}
+
+#hobby--content {
+    padding-top: 50px;
+}
+
+#btn {
+    margin-top: 20px;
+    margin-right: 80px;
+    border-radius: 20px;
+    background-color: #1d9dd9;
+}
+
+#link-digital:link {
+    text-decoration: none;
+}
